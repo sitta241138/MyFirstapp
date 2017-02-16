@@ -16,6 +16,15 @@
         android:textSize="@dimen/H1"
         android:id="@+id/titelView" />
 
+    <Button
+        android:id="@+id/btnMoreinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/MoreInfo"
+        android:onClick="onClickMoreInfo"
+        />
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,12 +33,4 @@
         android:id="@+id/livTraffic"
         android:background="@color/colorAccent"
         android:layout_margin="@dimen/my_margin"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/btnMoreinfo"
-        android:text="@string/MoreInfo"
-        />
 </RelativeLayout>
