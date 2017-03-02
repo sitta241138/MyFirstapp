@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.traffic_15,R.drawable.traffic_16,R.drawable.traffic_17,
             R.drawable.traffic_18,R.drawable.traffic_19,R.drawable.traffic_20};
 
-    private String[] titelstrings,deitailStrings;
+    private String[] titelStrings,deitailStrings, shortStrings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +29,18 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.livTraffic);
 
         // get value .xml File by My_content.xml to display
-        titelstrings = getResources().getStringArray(R.array.titel);
+        titelStrings = getResources().getStringArray(R.array.titel);
         deitailStrings = getResources().getStringArray(R.array.detail);
 
+        // subString data เพื่อตัดข้อความ ให้สั้นตามที่ต้องการ
+
+        shortStrings = new String[deitailStrings.length];
+        for(int i=0;i<deitailStrings.length;i++){
+            shortStrings[i] = deitailStrings[i].substring(0,29)+"..."; // start cut array String 0 to 30 char
+        } // end for
+
         //create Listview
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titelstrings,deitailStrings);
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titelStrings,shortStrings);
         listView.setAdapter(myAdapter);
     }// main methot onCreate
 
