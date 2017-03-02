@@ -14,10 +14,10 @@
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="@dimen/H1"
-        android:id="@+id/titelView" />
+        android:id="@+id/txttitledetail" />
 
     <Button
-        android:id="@+id/btnMoreinfo"
+        android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -28,8 +28,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/titelView"
-        android:layout_above="@id/btnMoreinfo"
+        android:layout_below="@+id/txttitledetail"
+        android:layout_above="@id/btnBack"
         android:id="@+id/livTraffic"
         android:background="@color/colorAccent"
         android:layout_margin="@dimen/my_margin"/>
