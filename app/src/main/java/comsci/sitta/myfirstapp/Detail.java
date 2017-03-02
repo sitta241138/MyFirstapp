@@ -26,7 +26,7 @@ public class Detail extends AppCompatActivity {
         imageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.traffic_01));
     } // End Methot onCreate onCreate is all layout in activity_detail.xml
 
-    public void cliackback(View view){
+    public void clickback(View view){
         finish();
     }// End methot cliackback
 
