@@ -32,7 +32,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/imvImageDetail"
         android:layout_above="@+id/btnBack"
-        android:layout_margin="10sp"
+        android:layout_margin="@dimen/my_margin"
         android:background="@color/colorAccent">
 
 

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) { // เมื่อมีการคลิกข้อมูลที่ตำแหน่งใด จะเก็บข้อมูลจากการคลิก
-                Intent intent = new Intent(MainActivity.this,Detail.class);
+                Intent intent = new Intent(MainActivity.this,Detail.class); // สร้างค่าตัวแปรและส่งไปให้ class MainActivity
                 intent.putExtra("Titel",titelStrings[position]);
                 intent.putExtra("Detail",deitailStrings[position]);
                 intent.putExtra("Image",ints[position]);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickMoreInfo(View view){
-        Intent intent = new Intent(Intent.ACTION_VIEW);
+        Intent intent = new Intent(Intent.ACTION_VIEW); // ประกาศค่าตัวแปร
         intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));
         startActivity(intent);
     }// main methot onClickMoreInfo

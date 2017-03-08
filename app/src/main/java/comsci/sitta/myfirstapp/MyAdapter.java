@@ -43,7 +43,7 @@ public class MyAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) { // รับจำนวนข้อมูล และ แสดงผลหน้าแอป
 
-        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE); // แปลงค่าตัวแปล
         View view = layoutInflater.inflate(R.layout.my_listview,parent,false);
         // Intitial View
 
