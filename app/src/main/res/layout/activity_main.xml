@@ -16,21 +16,40 @@
         android:textSize="@dimen/H1"
         android:id="@+id/txttitledetail" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/MoreInfo"
-        android:onClick="onClickMoreInfo"
-        />
+
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/txttitledetail"
-        android:layout_above="@id/btnBack"
+        android:layout_above="@+id/layButton"
         android:id="@+id/livTraffic"
         android:background="@color/colorAccent"
         android:layout_margin="@dimen/my_margin"/>
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/moreInfo"
+            android:onClick="onClickMoreInfo"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnAboutme"
+            android:text="@string/aboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
 </RelativeLayout>
