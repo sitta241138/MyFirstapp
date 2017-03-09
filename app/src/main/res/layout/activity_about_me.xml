@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context="comsci.sitta.myfirstapp.AboutMe">
+
+
+    <TextView
+        android:id="@+id/txtTitleAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutMe"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/H1"
+        android:layout_margin="@dimen/my_margin"/>
+
+    <ImageView
+        android:id="@+id/ImgAboutMe"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        app:srcCompat="@drawable/me"
+        android:layout_below="@+id/txtTitleAboutMe"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ImgAboutMe"
+        android:layout_above="@+id/btnBackAbout"
+        android:layout_margin="@dimen/my_margin"
+        android:background="@color/colorAccent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDetailScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goDe"
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goDe2"
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goDe3"
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="@dimen/H2" />
+
+            <TextView
+                android:id="@+id/Facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onFacebook"
+                android:text="Facebook     สิทธา สายใหม่"
+                android:textSize="@dimen/H2" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBackAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:onClick="btnBackAbout"
+        />
+
+</RelativeLayout>

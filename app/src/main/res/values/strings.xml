@@ -3,4 +3,22 @@
     <string name="txtTitel">ป้ายจราจร</string>
     <string name="moreInfo">More Info</string>
     <string name="aboutMe">About Me</string>
+
+    <string name="goDe">ชื่อ สิทธา สายใหม่</string>
+    <string name="goDe2">รหัสนักศึกษ 5711020660041</string>
+    <string name="goDe3">หลักสูตร่ วิทยาการคอม</string>
+    <string name="goDe4">Facebook</string>
+
+    <string name="godd1">สิทธา สายใหม่</string>
+    <string name="godd2">5711020660041</string>
+    <string name="godd3">วิทยาการคอม</string>
+
+    <string name="gooop">
+        ชื่อ สิทธา สายใหม่ \n
+        รหัสนักศึกษา 5711020660041 \n
+        หลังกสูตร วิทยาการคอมพิวเตอร์ \n
+
+
+            </string>
+
 </resources>
