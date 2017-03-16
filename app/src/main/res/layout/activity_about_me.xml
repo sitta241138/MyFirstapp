@@ -45,46 +45,45 @@
                 android:id="@+id/txtDetailScroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/goDe"
-                android:textSize="@dimen/H2" />
+                android:text="@string/my_name"
+                android:textSize="@dimen/H2"
+                android:layout_marginTop="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" "
-                android:textSize="@dimen/H2" />
+                android:text="@string/my_ID"
+                android:textSize="@dimen/H2"
+                android:layout_marginTop="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/goDe2"
-                android:textSize="@dimen/H2" />
+                android:text="@string/my_comsci"
+                android:textSize="@dimen/H2"
+                android:layout_marginTop="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"/>
 
             <TextView
+                android:id="@+id/phonenumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" "
-                android:textSize="@dimen/H2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/goDe3"
-                android:textSize="@dimen/H2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" "
-                android:textSize="@dimen/H2" />
+                android:text="@string/my_phone"
+                android:textSize="@dimen/H2"
+                android:layout_marginTop="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"/>
 
             <TextView
                 android:id="@+id/Facebook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onFacebook"
-                android:text="Facebook     สิทธา สายใหม่"
-                android:textSize="@dimen/H2" />
+                android:text="@string/my_facebook"
+                android:textSize="@dimen/H2"
+                android:layout_marginTop="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"/>
 
         </LinearLayout>
 
